@@ -70,10 +70,9 @@
     color: #006489;
 }
 .topic-content{
-    font-size: 1.25rem;
+    font-size: 1.20rem;
     font-weight: 400;
-border-spacing: 1.5rem;
-word-spacing: 0.4rem;
+
 }
 .topic-content-span{
     font-size: 1.5rem;
@@ -93,6 +92,7 @@ word-spacing: 0.4rem;
 }
 .recent-entries{
     background-color: #EEEEEE;
+    cursor: pointer;
 }
 .salesforce-entries h1{
     background: linear-gradient(180deg, #00AEEF 0%, #006489 100%);
@@ -152,9 +152,8 @@ word-spacing: 0.4rem;
         margin: 4vh;
       }
       .about-us-left-content{
-        font-size: 1.25rem;
+        font-size: 1.20rem;
         font-weight: 400;
-        word-spacing: 0.5rem;
         padding: 1vh;
         padding-left: 4vh;
         padding-right: 4vh;
@@ -184,3 +183,103 @@ word-spacing: 0.4rem;
         font-size: 5rem;
         text-align: center;
       }
+.contact-us-div{
+  background-color: #ffffff;
+  padding: 2vh;
+  box-shadow: 5px 5px 10px #d3d3d3;
+  width: 25vw;
+  
+ 
+}
+.contact-us-all{
+  background-color: #EEEEEE;
+padding: 2vh; 
+margin-bottom: 0;
+}
+.contact-us{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+  margin-left: 8vw;
+}
+.contact-us-left{
+  height: 60vh;
+  width: 25vw;
+  background-color: #ffffff;
+  margin-top: 4vh;
+  margin-left: 12vw;
+ text-align: center;
+ padding: 4vh;
+}
+.contact-info{
+  font-size: 1.2rem;
+  font-weight: 400;
+align-items: center;
+}
+.contact-block{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  padding-top: 2vh;
+}
+.contact-us-icon{
+padding-top: 30vh;
+ justify-content: space-evenly;
+ gap: 4vw !important;
+}
+.contact-us-icon img{
+ width: 2vw;
+}
+.contact-us-right{
+ 
+  width: 50vw;
+  background-color: #ffffff;
+  margin-top: 4vh;
+  border-radius: 20px;
+  border: 1px solid #b3b3b3;
+  box-shadow: 5px 5px 10px #d3d3d3;
+}
+.contact-us-bottom-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contact-us-right-header{
+  border-radius: 2vh  2vh 0 0;
+  background: linear-gradient(90deg, #006489 0%, #00AEEF 49.5%, #006489 100%);
+  color:white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 2vh;
+  align-items: center;
+}
+.submit-button{
+  background-color: #00AEEF;
+
+  color: white;
+  padding: 2vh;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+}
+.form-check{
+  
+  margin-bottom: 2vh;
+}
+.contact-form{
+  margin-left: 4vw;
+}
+.about-us-div-content h6{
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+.about-us-div-content p{
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}

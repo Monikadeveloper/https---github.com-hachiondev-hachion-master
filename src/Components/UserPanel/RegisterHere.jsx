@@ -41,7 +41,7 @@ const handleClick=()=>{
     <div className='step-one'>
       <h6 className='steps-head-one'>1</h6>
 </div>
-<hr width='45%' size='1' color='#00AAEF'/>
+<hr width='55%' size='1' color='#00AAEF'/>
 <div className='step-two'>
   <h6 className='steps-head-two'>2</h6>
 </div>

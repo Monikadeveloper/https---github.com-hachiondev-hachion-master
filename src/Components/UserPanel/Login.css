@@ -63,7 +63,7 @@ background-size:cover;
    .icon-holder {
     display: flex;
     justify-content: space-evenly;
-    gap: 4vh;
+    gap: 4vw;
 }
 
 .social-login-btn {
@@ -211,7 +211,9 @@ background-size:cover;
     cursor: pointer;
   }
   
-  
+  .captcha{
+    margin-left: 2vw;
+  }
 .btn{
     width:26vw;
     height:5vh;
@@ -226,62 +228,99 @@ background-size:cover;
     color: blue;
 }
 @media (max-width: 1024px){
-    .icon-holder{
-        display:flex;
-        justify-content:space-around;
-        gap: 2vh;
-    }
-.login{
-    flex-direction:column;
+    .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      flex-direction: column !important;
+        
+      }
+      .login-left {
+        width: 100%;
+        height: 65vh;
+      }
+  
+      .login-right {
+     width: 100%;
+     height: 35vh;
+          
+      }
+      .input-group,
+      .form-control,
+      .btn {
+        width: 70vw;
+        font-size: 1rem;
+        border-radius: 5px;
+      }
+      .login-top {
+        padding-top: 1vh;
+      }
     
-}
-.login-left,.login-right{
-    width:50%;
-    padding:1vw;
-    height: 120vh;
-
-}
+      .welcome-back {
+        font-size: 1.5rem;
+        margin-top: 1vh;
+      }
+    
+      .login-continue {
+        font-size: 1.25rem;
+      }
+    .login-with hr{
+      width: 20%;
+    }
+    
+      .icon-holder {
+        justify-content:space-evenly;
+        gap: 10vw;
+      }
+    
+      .go-to-register {
+        font-size: 1rem;
+      }
 }
 @media (max-width: 768px) {
     .login {
-      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     
       
     }
     .login-left {
-        width: 50%;
+        margin-top: 8vh;
         height: auto;
-        padding: 2vh;
+        padding: 1vh;
     }
 
     .login-right {
-        width: 50%;
-        height: 100vh;
+    display: none;
         
     }
-    .form-control{
-        width: auto;
-        height: 5vh;
+    .input-group,
+    .form-control,
+    .btn {
+      width: 70vw;
+      font-size: 1rem;
+      border-radius: 5px;
     }
     .login-top {
-      padding-top: 2vh;
+      padding-top: 1vh;
     }
   
     .welcome-back {
       font-size: 1.5rem;
+      margin-top: 2vh;
     }
   
     .login-continue {
       font-size: 1.25rem;
     }
-  
-    .input-group {
-      margin-bottom: 1.5vh;
-    }
+  .login-with hr{
+    width: 20%;
+  }
   
     .icon-holder {
-      justify-content:space-around;
-      gap: 1vh;
+      justify-content:space-evenly;
+      gap: 10vw;
     }
   
     .go-to-register {
@@ -295,24 +334,35 @@ background-size:cover;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 6vh;
+    }
+    .captcha{
+        margin-left: 0vh;
     }
     .login-option{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
       .login-left
        {
         width:100%;
         height: 100%;
-        padding: 1vw;
+    
+      }
+      .login-with hr{
+        width: 15%;
       }
       .login-right{
         display: none;
       }
 
     .login-top {
-      padding-top: 1vh;
+     margin-top: 1vh;
     }
-  
+  .icon-holder{
+    display: flex;
+    justify-content: space-evenly;
+   gap: 10vw;
+  }
     .login-logo {
       width:100%;
       height:auto;
@@ -330,34 +380,30 @@ background-size:cover;
     .input-group,
     .form-control,
     .btn {
-      width: 100%;
-      height: 6vh;
+      width: 80vw;
       font-size: 0.8rem;
       border-radius: 5px;
     }
   
-    .icon-holder {
-      justify-content: space-around;
-      gap: 2vh;
-     
-    }
+ 
   
     .go-to-register {
       font-size: 0.9rem;
     }
   }
 .register-head{
-    padding-top: 3vh;
-    padding-bottom: 2vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
     font-size: 2.25rem;
 }
 .icon-places{
     padding: 3vh;
+    gap: 3vh;
     display: flex;
     justify-content: space-evenly;
 }
 .icon-text{
-    height: 7vh;
+   padding: 1vh;
     width: 16.25vw;
 display: flex;
 flex-direction: row;
@@ -491,7 +537,7 @@ cursor: pointer;
 .icon-places{
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+   
 }
 .login-link{
     display: flex;
@@ -508,36 +554,44 @@ cursor: pointer;
 
 
     .icon-places {
+        padding-top: 1vh;
         flex-direction: column;
-        gap: 2vh;
+        gap: 0.8vh;
         width: 100%;
         align-items: center;
     }
 
     .icon-text {
-       
+    padding: 0.5vh;
+    width: 40vw ;
+    }
+
+    .icon-text-img {
         height: 6vh;
+        width: 6vw !important;
     }
-
-    .icon-text-img, .icon-text-img-linkedin {
-        height: 5vh;
-        width: 2.5vw;
+    .icon-text-img-linkedin{
+        height: 7vh;
+        width: 6vw;
     }
-
     .icon-text-holder, .icon-text-holder-facebook, 
     .icon-text-holder-linkedin, .icon-text-holder-apple, 
     .icon-text-holder-email {
-        font-size: 0.8rem;
-        padding: 0;
+        padding: 1vh;
+      height: 5vh !important;
+        font-size: 0.9rem;
+        
     }
+    
      
-    .icon-holder {
-        justify-content: space-around;
-        gap: 1vh;
-      }
+   
 
     .register-head {
         font-size: 1.6rem;
+        margin-top: 0vh;
+    }
+    .option{
+        margin-top: 0vh;
     }
 
     .login-link {
@@ -547,39 +601,58 @@ cursor: pointer;
 
 @media (max-width: 768px) {
     .login-left {
-        width: 50%;
+        width: 100%;
         height: auto;
         padding: 2vh;
     }
 
-    .login-right {
-        width: 50%;
-        
-        
-    }
+  
     .register-head {
         font-size: 1.5rem;
         text-align: center;
     }
 
     .icon-text {
-        width: 90%;
+        width: 80vw;
     }
+.icon-text-img{
+    height: 8vh;
+    width: 10vw;
+}
+.icon-places{
+    width: 100%;
+}
+.icon-text-holder, .icon-text-holder-facebook, 
+.icon-text-holder-linkedin {
+    padding: 0.5vh;
+  height: 5vh !important;
+    font-size: 0.9rem;
+    padding-left: 2vw;
+    
+    
+}
+ .icon-text-holder-apple, 
+.icon-text-holder-email {
+    padding: 2.25vh;
+  height: 5vh !important;
+    font-size: 0.9rem;
+    padding-left: 2vw;
+    
+    
+}
 
-    .icon-text-holder, .icon-text-holder-facebook, 
-    .icon-text-holder-linkedin, .icon-text-holder-apple, 
-    .icon-text-holder-email {
-        font-size: 0.7rem;
-        padding: 0;
-    }
-
+.icon-text-img-linkedin{
+    height: 7vh;
+    width: 7vw;
+}
+  
     .login-left h4 {
-        font-size: 0.9rem;
+        font-size: 1.25rem;
         text-align: center;
     }
 
     .login-link {
-        font-size: 12px;
+        font-size: 1.25rem;
         text-align: center;
     }
 }
@@ -588,27 +661,50 @@ cursor: pointer;
         font-size: 1.5rem;
         text-align: center;
     }
+    .option{
+        font-size: 1.5rem;
+    }
 
     .icon-text {
-        width: 90%;
+        width: 100vw;
+      
     }
 
-    .icon-text-holder,.icon-text-holder-facebook, 
+    .icon-places{
+        display: flex;
+       margin-right: 12vw;
+    }
+    .icon-text-holder,.icon-text-holder-facebook
+     {
+        font-size: 1rem;
+        padding: 1vh;
+        padding-right: 2vw;
+        width: 80vw !important;
+
+    }
     .icon-text-holder-linkedin, .icon-text-holder-apple, 
-    .icon-text-holder-email {
-        font-size: 0.6rem;
-        padding: 0;
-       
-
+    .icon-text-holder-email{
+        font-size: 1rem;
+        padding: 2.2vh;
+        padding-right: 2vw;
+        width: 100vw !important;
     }
-
+    .icon-text-img{
+        height: 10vh;
+        width: 10vw !important;
+    }
+    .icon-text-img-linkedin{
+        height: 7vh;
+        width: 8vw !important;
+    }
+ 
     .login-left h4 {
         font-size: 0.9rem;
         text-align: center;
     }
 
     .login-link {
-        font-size: 12px;
+        font-size: 1 rem;
         text-align: center;
     }
 }
@@ -683,9 +779,9 @@ cursor: pointer;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 3vh 0;
+    padding: 1.5vh 0;
     width: 100%;
-    max-width: 13.8vw; /* Set a maximum width for larger screens */
+    max-width: 17vw; 
     margin: 0 auto;
 }
 
@@ -745,9 +841,12 @@ hr {
     }
 
     .steps {
-        width: 90%;
+        max-width: 25vw;
     }
-
+   
+.steps-head hr{
+    width: 50% !important;
+}
     .register-learning {
         font-size: 1.5rem;
     }
@@ -769,6 +868,10 @@ hr {
         flex-direction: row;
         align-items: center;
         padding: 2vh 0;
+        max-width: 40vw;
+    }
+    .steps-head hr{
+        width: 50%;
     }
 
     .step-one, .step-two {
@@ -784,7 +887,7 @@ hr {
     .steps-head-one, .steps-head-two {
         font-size: 1rem;
     }
-    hr{
+    .steps-head hr{
         width: 80%;
     }
 
@@ -842,7 +945,7 @@ box-shadow: darkgrey;
 }
 
 .otp{
-    width: 17.5vw;
+   width: 20vw;
     height: 5vh;
     display: flex;
     flex-direction: row;
@@ -880,11 +983,24 @@ box-shadow: darkgrey;
     .login {
         flex-direction: row;
     }
-
+.enter-otp{
+    padding-top: 0vh;
+}
     .register-btn {
         width: 100%;
         height: 6vh;
         font-size: 1rem;
+    }
+    .otp{
+        width: 40vw;
+        height: 5vh;
+    }
+    .otp-verify{
+        margin-top: 0vh;
+    }
+    .otp-number{
+        height: 4vh;
+        width: 4vw;
     }
 }
 
@@ -897,6 +1013,13 @@ box-shadow: darkgrey;
     .register-btn {
         font-size: 0.9rem;
     }
+    .otp{
+        width: 50vw;
+    }
+    .otp-number{
+        height: 4vh;
+        width: 6vw;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -905,13 +1028,18 @@ box-shadow: darkgrey;
         width: 100%;
         justify-content: space-between;
     }
+    .otp{
+        width: 60vw;
+    }
+    .otp-number{
+        height: 4vh;
+        width: 12vw;
+    }
+   
 .login-label{
     font-size: 0.6rem;
 }
-    .otp-number {
-        width: 2.8vw;
-        height: 3.5vh;
-    }
+  
 
     .register-btn {
         font-size: 0.85rem;

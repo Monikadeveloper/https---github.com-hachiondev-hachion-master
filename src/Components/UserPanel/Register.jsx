@@ -17,7 +17,7 @@ const Register = () => {
 <div className='login-top'>
   <img src={logo} alt='logo' className='login-logo'/>
   <h3 className='register-head'>Register to start learning</h3>
-  <h4>Tap on any option to create an account</h4>
+  <h4 className='option'>Tap on any option to create an account</h4>
   <div className='icon-places'>
     <div className='icon-text'>
   <img src={google} alt='google' className='icon-text-img'/>

@@ -8,12 +8,12 @@
 
 
 .topbar {
-    height: 6vh;
+   
     background-color: rgba(0, 174, 239, 1);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 2vw; /* Adjusted for responsiveness */
+    padding: 0 1vw; 
     font-size: 1.25rem;
 }
 
@@ -22,8 +22,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%; /* Take full width and adjust inside with padding */
-    max-width: 50vw; /* Limit the width on larger screens */
+    width: 100%; 
+    max-width: 50vw; 
     padding-left: 1vw;
 }
 
@@ -37,15 +37,7 @@
     font-size: 1.15rem;
 
 }
-.whatsapp{
-    height: 3vh;
-    font-size: 1.15rem;
-    cursor: pointer;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-}
+
 .whatsapp-number{
     font-weight: 500;
     font-size: 1.15rem;
@@ -53,10 +45,7 @@
     margin-right: 1vh;
   
 }
-.whatspp-icon{
-    height: 3vh;
-    width: 1.5vw;
-}
+
 .training-mail{
     height: 3vh;
     cursor: pointer;
@@ -112,10 +101,13 @@
         height:4vh;
         font-size: 0.8rem;
     }
-    .whatsapp-icon{
-     height: auto;
-        width: 1vw !important;
-        margin-right: 1vh;
+ 
+    .query-content{
+        margin-right: 1vw;
+    }
+    .topbar-left{
+        align-items: center;
+        max-width: 70vw;
     }
 }
 @media screen and (max-width: 768px){
@@ -124,6 +116,9 @@
         width:8vw;
         height:4vh;
         font-size: 0.7rem;
+    }
+    .topbar-left{
+        max-width: 75vw;
     }
     .modal fade{
         width: 15vw;
@@ -181,6 +176,7 @@
     color: white;
     font-weight: 700;
    gap:1rem;
+   padding: 1vh;
 
 }
 .training-mail-icon{
@@ -203,6 +199,7 @@
     .login-div-content {
         padding-right: 4vh; 
         font-size: 1rem;
+        padding: 0.5vh;
     }
    
 }
@@ -425,24 +422,7 @@
     }
   
  
-  @media screen and (max-width: 480px) {
-    .search-div-home {
-        width: 15vw;
-        margin-left: 1vw;
-      }
-    
-      .navbar-nav {
-        flex-direction: row;
-        width: 100%; 
-        font-size: 0.5rem; 
-        margin-left: 0vh;
-      }
-    
-      .nav-item-link {
-        font-size: 0.5rem;
-        padding:4px;
-      }
-    }
+ 
   @media screen and (max-width: 1024px) {
    
     .search-div-home {
@@ -891,7 +871,7 @@ color: white !important;
     justify-content: flex-start; 
     gap: 1.2vh; 
     margin: 5px auto;
-    max-width: 75%; 
+    max-width: 75vw; 
 }
 .card {
     width: calc(25% - 10px); 
@@ -1193,7 +1173,7 @@ width: auto;}
         color:white;
        
         display: flex;
-        margin-top: 10vh;
+       
         padding-bottom:6vh;
         flex-direction: column;
         justify-content: space-evenly;

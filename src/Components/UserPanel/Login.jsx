@@ -110,7 +110,7 @@ const Login = () => {
                   <label className="form-check-label" htmlFor="flexCheckDefault">
                     I'm not a robot
                   </label>
-                  <img src={captcha} alt='captcha' style={{ marginLeft: '4vh', cursor: 'pointer' }} />
+                  <img src={captcha} alt='captcha' className='captcha' />
                 </div>
 
                 <div className="d-grid gap-2">
@@ -120,9 +120,9 @@ const Login = () => {
             </div>
 
             <div className='login-with'>
-              <hr width='25%' size='2' style={{ marginTop: '3vh' }}></hr>
+              <hr width='20%' size='2' style={{ marginTop: '3vh' }}></hr>
               <p className='login-option'>Or Login with</p>
-              <hr width='25%' size='2' style={{ marginTop: '3vh' }}></hr>
+              <hr width='20%' size='2' style={{ marginTop: '3vh' }}></hr>
             </div>
 
             <div className='icon-holder'>

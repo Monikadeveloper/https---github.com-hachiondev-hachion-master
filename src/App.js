@@ -23,6 +23,8 @@ import Salesforce from './Components/UserPanel/Salesforce';
 import SalesforceBlog from './Components/UserPanel/SalesforceBlog';
 import QaTestingBlog from './Components/UserPanel/QaTestingBlog';
 import Aboutus from './Components/UserPanel/Aboutus';
+import ContactUs from './Components/UserPanel/ContactUs';
+import UserDashboard from './Components/UserPanel/UserDashboard';
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
       <Route path='/salesforceblog' element={<SalesforceBlog/>}/>
       <Route path='/qatestingblog' element={<QaTestingBlog/>}/>
       <Route path='/aboutus' element={<Aboutus/>}/>
+      <Route path='/contactus' element={<ContactUs/>}/>
+      <Route path='/userdashboard' element={<UserDashboard/>}/>
       </Routes></BrowserRouter>
     </>
   );

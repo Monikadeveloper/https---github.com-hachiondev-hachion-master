@@ -21,7 +21,7 @@ const Topbar = () => {
       <div className='topbar'>
         <div className='topbar-left'>
           <p className='query-content'>Have any query ?</p>
-          <div className='whatsapp'>
+          <div className='training-mail'>
             <img src={whatsapp} alt='whatsapp-icon' className='whatsapp-icon' />
             <p className='whatsapp-number'> +91 9490323388</p>
             <PiLineVerticalThin style={{ color: 'white', fontSize: '2rem' }} />

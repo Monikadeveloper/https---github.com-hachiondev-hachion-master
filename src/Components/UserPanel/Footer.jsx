@@ -6,6 +6,7 @@ import linkedin from '../../Assets/linkedin.png';
 import instagram from '../../Assets/instagram.png';
 import quora from '../../Assets/Component 141.png';
 import {  useNavigate } from 'react-router-dom';
+
 import './Home.css';
 const Footer = () => {
   const navigate= useNavigate();
@@ -20,6 +21,9 @@ const Footer = () => {
   }
   const handleAbout=()=>{
     navigate('/aboutus')
+  }
+  const handleContact=()=>{
+    navigate('/contactus')
   }
   return (
     
@@ -53,7 +57,7 @@ const Footer = () => {
     <div className='footer-head'>
     <p className='footer-heading'>Hachion</p>
     <p className='footer-content' onClick={handleAbout}>About us</p>
-    <p className='footer-content'>Contact us</p>
+    <p className='footer-content' onClick={handleContact}>Contact us</p>
     <p className='footer-content'>Careers</p>
     <p className='footer-content' onClick={handleBlog}>Blog</p>
     <p className='footer-content'>Internship</p>

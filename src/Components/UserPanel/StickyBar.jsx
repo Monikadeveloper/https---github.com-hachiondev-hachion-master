@@ -21,7 +21,7 @@ const StickyBar = () => {
       <div className="sticky-bar">
         <div className="contact-info">
           <p className='query-content'>Have any query ?</p>
-          <div className='whatsapp'>
+          <div className='training-mail'>
             <img src={whatsapp} alt='whatsapp-icon' style={{height:'30px',width:'30px'}}/>
             <p className='whatsapp-number'> +91 9490323388</p>
             <PiLineVerticalThin style={{color:'white',fontSize:'2rem'}}/>

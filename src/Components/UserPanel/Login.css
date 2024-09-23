@@ -35,7 +35,7 @@ background-size:cover;
 }
 
 .welcome-back{
-    margin-top: 3vh;
+    margin-top: 2.5vh;
     font-weight:700;
     margin-bottom: 1vh;
     font-size:2.1rem;
@@ -216,7 +216,7 @@ background-size:cover;
   }
 .btn{
     width:26vw;
-    height:5vh;
+    padding: 1vh;
     font-weight: bold;
     border-radius: 5px;
 }
@@ -235,34 +235,59 @@ background-size:cover;
       flex-direction: column !important;
         
       }
+      .login-logo{
+        height: 6vh;
+      }
+      .captcha{
+        height: 4vh;
+        width: 4vw;
+      }
       .login-left {
         width: 100%;
-        height: 65vh;
+        height: 70vh;
       }
+      .login-option{
+        font-size: 0.8rem;
+        padding-top: 0.35vh;
+      }
+
   
       .login-right {
      width: 100%;
-     height: 35vh;
+     height: 30vh;
           
+      }
+      .social-login-btn{
+        height: 3vh;
+        width: 3vw;
+      }
+      .social-login-btn-linkedin{
+        height: 3.25vh;
+        width: 3.25vw;
+      }
+      .form-check{
+        margin-top: 0vh;
+        font-size: 1rem;
       }
       .input-group,
       .form-control,
       .btn {
-        width: 70vw;
+        width: 50vw;
         font-size: 1rem;
+       height: 4.5vh;
         border-radius: 5px;
       }
       .login-top {
-        padding-top: 1vh;
+        padding-top: 0vh;
       }
     
       .welcome-back {
-        font-size: 1.5rem;
-        margin-top: 1vh;
+        font-size: 1.25rem;
+        margin-top: 0vh;
       }
     
       .login-continue {
-        font-size: 1.25rem;
+        font-size: 1rem;
       }
     .login-with hr{
       width: 20%;
@@ -363,6 +388,14 @@ background-size:cover;
     justify-content: space-evenly;
    gap: 10vw;
   }
+  .social-login-btn{
+    height: 5vh;
+    width: 8vw;
+  }
+  .social-login-btn-linkedin{
+    height: 5.5vh;
+    width: 9vw;
+  }
     .login-logo {
       width:100%;
       height:auto;
@@ -440,6 +473,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     }
     .icon-text:hover .icon-text-holder{
         font-size: 1.20rem;
@@ -626,16 +660,16 @@ cursor: pointer;
 .icon-text-holder-linkedin {
     padding: 0.5vh;
   height: 5vh !important;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding-left: 2vw;
     
     
 }
  .icon-text-holder-apple, 
 .icon-text-holder-email {
-    padding: 2.25vh;
+padding: 1vh;
   height: 5vh !important;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding-left: 2vw;
     
     

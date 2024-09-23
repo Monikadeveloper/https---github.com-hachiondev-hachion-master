@@ -6,7 +6,7 @@ import './Home.css';
 
 const NavbarTop = () => {
   const [activeLink, setActiveLink] = useState(null);
-  const [searchVisible, setSearchVisible] = useState(false);
+  const [searchVisible, setSearchVisible] = useState(true);
   const navigate = useNavigate();
 
   const handleClick = () => {

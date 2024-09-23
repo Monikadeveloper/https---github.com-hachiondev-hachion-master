@@ -44,8 +44,10 @@ const rows = [
 
 export default function UserOrders() {
   return (<>  
-  <div className='courses-enrolled'>
-    <h6>My Orders</h6>
+   <div className='courses-enrolled'>
+    <h6>My orders</h6>
+    </div>
+    <div className='resume-div'>
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 1300 }} aria-label="customized table">
         <TableHead>

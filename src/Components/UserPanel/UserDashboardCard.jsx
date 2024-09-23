@@ -9,8 +9,8 @@ import { FaUserTimes } from 'react-icons/fa';
 const UserDashboardCard = () => {
   return (
     <>
-      <div className='admin-dashboard'>
-        <p>Dashboard</p>
+      <div className='courses-enrolled'>
+        <h6>Dashboard</h6>
         <div className='admin-dashboard-content'>
         <DashboardCard
             icon={FaUserTimes}

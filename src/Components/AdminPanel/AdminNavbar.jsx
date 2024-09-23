@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Admin.css';
 import logo from '../../Assets/image 133.png';
 import { RiMenuUnfold3Line } from "react-icons/ri";
@@ -6,9 +6,19 @@ import { IoSearch } from "react-icons/io5";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { IoMdNotifications } from "react-icons/io";
 import ProfileImage from '../../Assets/profile1.jfif';
+import { Link } from 'react-router-dom';
+import Avatar from '@mui/material/Avatar';
+
 
 
 const AdminNavbar = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+  const handleLogout = () => {
+   
+    setIsLoggedIn(false);
+  };
+
   return (
    <>
    <div className='admin-nav'>
@@ -28,21 +38,25 @@ const AdminNavbar = () => {
          <IoMdNotifications style={{color:'#00AEEF',fontSize:'2rem'}}/>
        </div>
       
-         <div className='user-info'>
-         <div class="btn-group">
-         <button type="button" class="btn btn-logout dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-         <div className='image-block'>
-             <img src={ProfileImage} alt='user' />
-           </div>Hachion
-         </button>
-         <ul className="dropdown-menu">
-           <li><a className="dropdown-item" href="#">Dashboard</a></li>
-           <li><a className="dropdown-item" href="#">Settings</a></li>
-           <li><hr className="dropdown-divider" /></li>
-           <li><a className="dropdown-item" href="#">Logout</a></li>
-         </ul>
-       </div>
-       </div>
+       <div className='user-info'>
+            <div className="btn-group">
+            
+              <Avatar alt="user_name" src={ProfileImage} />
+              <div class="dropdown">
+  <Link className="btn-logout dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Hachion
+  </Link>
+
+  <ul className="dropdown-menu">
+    <li><Link className="dropdown-item" to={'/userdashboard'}>Dashboard</Link></li>
+    <li><Link className="dropdown-item" href="#">Settings</Link></li>
+    <li><a className="dropdown-divider" /></li>
+    <li><Link className="dropdown-item" href="#" onClick={handleLogout}>Logout</Link></li>
+  </ul>
+</div>
+  
+</div>
+</div>
      </div>
    </div>
    </>

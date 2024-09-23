@@ -45,7 +45,9 @@ const rows = [
 export default function Certificate() {
   return (<>  
   <div className='courses-enrolled'>
-    <h6>Download Certificate</h6>
+    <h6>Messages</h6>
+    </div>
+    <div className='resume-div'>
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 1300 }} aria-label="customized table">
         <TableHead>

@@ -5,7 +5,7 @@ import { ImQuotesRight } from "react-icons/im";
 import profile1 from '../../Assets/profile1.jfif';
 import linkedin from '../../Assets/linkedin.png';
 import { MdOutlineStar } from "react-icons/md";
-
+import Avatar from '@mui/material/Avatar';
 
 const LearnerCard = (props) => {
   return (
@@ -13,7 +13,7 @@ const LearnerCard = (props) => {
  <div className='learner-card'>
   <div className='learner-top'>
 <div className='learner-image'>
-  <img src={profile1} alt='profile-image'/>
+<Avatar alt="Remy Sharp" src={profile1} className='profile-image' />
   </div>
   <div className='learner-info'>
     <div className='learner-name'>
@@ -24,7 +24,7 @@ const LearnerCard = (props) => {
 <p className='rating'>< MdOutlineStar className='star-icon'/>< MdOutlineStar className='star-icon'/>< MdOutlineStar className='star-icon'/>
 < MdOutlineStar className='star-icon'/>< MdOutlineStar className='star-icon'/> </p>
     </div>
-  
+   
     </div>
   <div>
   <ImQuotesLeft style={{width:'29.72px',height:'22.8px',color:'rgba(97, 97, 97, 1)'}}/>

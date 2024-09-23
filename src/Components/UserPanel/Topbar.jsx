@@ -6,10 +6,12 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import {IoLogOut} from 'react-icons/io5';
 import profile1 from '../../Assets/profile1.jfif';
+import Avatar from '@mui/material/Avatar';
+
 
 const Topbar = () => {
   
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   const handleLogout = () => {
    
@@ -38,18 +40,22 @@ const Topbar = () => {
           <div className='logout-right'>          <button className='logout-btn'><IoLogOut style={{fontSize:'2rem',gap:'0.5vh'}}/>Logout</button>
           <div className='user-info'>
             <div className="btn-group">
-              <button type="button" className="btn btn-logout dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <div className='image-block'>
-                  <img src={profile1} alt='user' />
-                </div>
-                Hachion
-              </button>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Dashboard</a></li>
-                <li><a className="dropdown-item" href="#">Settings</a></li>
-                <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#" onClick={handleLogout}>Logout</a></li>
-              </ul>
+            
+              <Avatar alt="user_name" src={profile1} />
+              <div class="dropdown">
+  <Link className="btn-logout dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Hachion
+  </Link>
+
+  <ul className="dropdown-menu">
+    <li><Link className="dropdown-item" to={'/userdashboard'}>Dashboard</Link></li>
+    <li><Link className="dropdown-item" href="#">Settings</Link></li>
+    <li><a className="dropdown-divider" /></li>
+    <li><Link className="dropdown-item" href="#" onClick={handleLogout}>Logout</Link></li>
+  </ul>
+</div>
+  
+            
             </div>
           </div>
           </div>

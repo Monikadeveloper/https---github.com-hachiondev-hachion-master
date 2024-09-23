@@ -25,6 +25,7 @@ import QaTestingBlog from './Components/UserPanel/QaTestingBlog';
 import Aboutus from './Components/UserPanel/Aboutus';
 import ContactUs from './Components/UserPanel/ContactUs';
 import UserDashboard from './Components/UserPanel/UserDashboard';
+import AdminDashboardView from './Components/AdminPanel/AdminDashboardView';
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
       <Route path='/aboutus' element={<Aboutus/>}/>
       <Route path='/contactus' element={<ContactUs/>}/>
       <Route path='/userdashboard' element={<UserDashboard/>}/>
+      <Route path='/admindashboardview' element={<AdminDashboardView/>}/>
       </Routes></BrowserRouter>
     </>
   );

@@ -2,13 +2,26 @@ import { React, useState } from 'react';
 import Topbar from './Topbar';
 import NavbarTop from './NavbarTop';
 import './Dashboard.css';
-import { FaTachometerAlt, FaBook } from 'react-icons/fa';
+import { AiFillDashboard } from "react-icons/ai";
+import { PiNotePencilBold } from "react-icons/pi";
+import { PiTrolleySuitcaseFill } from "react-icons/pi";
+import { FaIdCard } from "react-icons/fa6";
+import { PiCertificateBold } from "react-icons/pi";
+import { MdOutlineVideoCameraFront } from "react-icons/md";
+import { BsFillEnvelopeFill } from "react-icons/bs";
+import { MdRateReview } from "react-icons/md";
+import { TbSettingsBolt } from "react-icons/tb";
 import UserDashboardCard from './UserDashboardCard';
 import Footer from './Footer';
 import StickyBar from './StickyBar';
 import UserCategoryTable from './UserCategoryTable';
 import UserOrders from './UserOrders';
 import Certificate from './Certificate';
+import UserMessages from './UserMessages';
+import UserReviews from './UserReviews';
+import UserVideos from './UserVideos';
+import UserResume from './UserResume';
+import UserProfile from './UserProfile';
 
 const UserDashboard = () => {
   const [dropdownOpen, setDropdownOpen] = useState({});
@@ -23,15 +36,15 @@ const UserDashboard = () => {
   };
 
   const menuItems = [
-    { title: 'Dashboard', icon: <FaTachometerAlt /> },
-    { title: 'Enrolls', icon: <FaBook /> },
-    { title: 'Orders', icon: <FaBook /> },
-    { title: 'Resume', icon: <FaTachometerAlt /> },
-    { title: 'Certificate', icon: <FaBook /> },
-    { title: 'Videos', icon: <FaTachometerAlt /> },
-    { title: 'Messages', icon: <FaBook /> },
-    { title: 'Review', icon: <FaTachometerAlt /> },
-    { title: 'Settings', icon: <FaBook /> },
+    { title: 'Dashboard', icon: <AiFillDashboard /> },
+    { title: 'Enrolls', icon: <PiNotePencilBold /> },
+    { title: 'Orders', icon: <PiTrolleySuitcaseFill /> },
+    { title: 'Resume', icon: <FaIdCard /> },
+    { title: 'Certificate', icon: <PiCertificateBold/> },
+    { title: 'Videos', icon: <MdOutlineVideoCameraFront /> },
+    { title: 'Messages', icon: <BsFillEnvelopeFill /> },
+    { title: 'Review', icon: <MdRateReview /> },
+    { title: 'Settings', icon: <TbSettingsBolt /> },
   ];
 
   const handleMenuItemClick = (index, title) => {
@@ -51,7 +64,16 @@ const UserDashboard = () => {
         return <Certificate />;
       case 'Enrolls':
         return <UserCategoryTable />;
-      // Add other cases if needed
+     case 'Messages':
+      return <UserMessages/>;
+      case 'Review':
+        return <UserReviews/>;
+        case 'Videos':
+          return <UserVideos/>
+          case 'Resume':
+            return <UserResume/>
+            case 'Settings':
+              return <UserProfile/>
       default:
         return <UserDashboardCard />; // Default to Dashboard
     }

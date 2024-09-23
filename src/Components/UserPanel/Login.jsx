@@ -120,9 +120,9 @@ const Login = () => {
             </div>
 
             <div className='login-with'>
-              <hr width='20%' size='2' style={{ marginTop: '3vh' }}></hr>
+              <hr width='20%' size='2' style={{ marginTop: '2vh' }}></hr>
               <p className='login-option'>Or Login with</p>
-              <hr width='20%' size='2' style={{ marginTop: '3vh' }}></hr>
+              <hr width='20%' size='2' style={{ marginTop: '2vh' }}></hr>
             </div>
 
             <div className='icon-holder'>

@@ -252,14 +252,14 @@
 }
     .topbar-left {
         flex-direction:row;
-        width: 70%;
+        width: 100%;
         align-items: center;
         justify-content: space-evenly;
        padding: 0;
        font-size: 0.5rem;
     }
 
-    .query-content, .whatsapp-number, .training-email {
+    .query-content, .training-email {
         font-size: 0.5rem; 
         text-align: center; 
     }
@@ -268,15 +268,14 @@
         margin: 0; 
     }
 
-    .login-div {
-        padding: 0;
-        flex-direction: row;
-    }
+  
 
-    .login-div-content {
-        width: 35%; 
-        font-size: 0.7rem;
+    .login-div {
+  display: none;
         
+    }
+    .logout-right{
+        display: none;
     }
 }
 /* General styling */
@@ -1128,29 +1127,37 @@ width: auto;}
    align-content: center;
 }
 @media screen and (max-width: 1024px){
-    .career-div{
-        margin-left: 5vh;
-        justify-content: space-between;
-    }
-    .online-training-div{
-        width: 24vw;
-    }
-}
-@media screen and (max-width: 768px){
-    .career-div{
-        flex-direction: row;
+    .career-div {
         flex-wrap: wrap;
+        justify-content: center; /* Center the elements */
         margin-left: 0;
     }
-    .online-training-div{
-        width: 40vw;
+    .online-training-div {
+        width: 45vw; /* Adjust the width to allow 2 per row */
         margin-bottom: 2vh;
     }
-    .online-training-div img{
+    .online-training-div img {
         height: 12vh;
         width: 10vw;
     }
-}  
+
+}
+@media screen and (max-width: 768px) {
+    .career-div {
+        flex-wrap: wrap;
+        justify-content: center; /* Center the elements */
+        margin-left: 0;
+    }
+    .online-training-div {
+        width: 45vw; /* Adjust the width to allow 2 per row */
+        margin-bottom: 2vh;
+    }
+    .online-training-div img {
+        height: 12vh;
+        width: 10vw;
+    }
+}
+
 @media screen and (max-width: 480px){
     .career-div{
         flex-direction: row;
@@ -1166,76 +1173,125 @@ width: auto;}
         width: 10vw;
     }
 }     
-      
-    
-    .footer{
-        background-color:black;
-        color:white;
-       
-        display: flex;
-       
-        padding-bottom:6vh;
-        flex-direction: column;
-        justify-content: space-evenly;
-   
-    }
-    .footer-top{
-        margin-top:4vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
- .footer-copyright{
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding-bottom: 6vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-top {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.footer-copyright {
     font-weight: 600;
     font-size: 1.1rem;
     text-align: center;
- }
-    .learner-card-item{
-        display: flex;
+}
+
+.footer-heading {
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+.footer-content {
+    font-weight: 400;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 12vh;
+    gap: 4vh;
+}
+
+.footer-link img {
+    height: 4vh;
+    width: 2vw;
+    cursor: pointer;
+}
+
+.footer-linkedin {
+    height: 3vh !important;
+    width: 1.5vw !important;
+    margin-top: 0.5vh;
+}
+
+.footer-linkedin:hover {
+    height: 2.8vh;
+    width: 1.3vw;
+}
+
+.footer-link img:hover {
+    height: 3.2vh;
+    width: 1.6vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-heading {
+        font-size: 1rem;
+    }
+    .footer-content {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-top {
         flex-direction: row;
-        margin-left: 24vh;
-        margin-top: 1.4vh;
-        gap:5vh;
-    }
-    .footer-heading{
-        font-weight:600;
-        font-size:1.15rem;
-    }
-    .footer-content{
-        font-weight:400 ;
-        font-size: 1.15rem;
-        cursor: pointer;
-    }
-    .footer-bottom{
-        display:flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
     }
-    .footer-link{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding-left: 12vh;
-        gap: 4vh;
-        
+    
+    .footer-head {
+        width: 45%; /* Ensures two footer headings fit in one row */
+        margin-bottom: 3vh; /* Adds spacing between rows */
+    }
+    
+    .footer-heading {
+        font-size: 0.9rem;
+    }
+    
+    .footer-content {
+        font-size: 0.75rem;
+    }
+
+    .footer-link {
+        padding-left: 0;
+        gap: 2vh;
+    }
+    .footer-bottom{
+        flex-direction: column;
     }
     .footer-link img{
-        height: 3vh;
-        width: 1.5vw;
-        cursor:pointer;
+        height: 7vh;
+        width: 7vw;
+        margin-bottom: 2vh;
     }
     .footer-linkedin{
-        height:2.5vh !important;
-        width:1.25vw !important;
+        height: 6vh !important;
+        width: 6vw !important;
+        margin-bottom: 2vh;
+        margin-top: 1vh;
     }
-    .footer-linkedin:hover{
-        height: 2.8vh;
-        width: 1.3vw;
-    }
-    .footer-link img:hover{
-   height: 3.2vh;
-   width: 1.6vw;
-    }
+}
+
     .user-info {
         display: flex;
         align-items: center;
@@ -1266,11 +1322,8 @@ width: auto;}
         font-weight: 600;
         border: none;
         cursor: pointer;
-        display:flex;
-        flex-direction:row;
-        justify-content: space-between;
-        width:10vw;
-        padding-top: 3vh !important;
+       margin-left: 2vh;
+      padding: 2.5vh;
     
     }
     
@@ -1288,13 +1341,14 @@ width: auto;}
         margin: 0;
     }
 .logout-btn{
-    width: 7.5vw;
+   /* height: 5vh; */
+   margin:1.5vh;
     border-radius: 10px;
-    padding: 1vh 2vh 1vh 2vh;
+    padding: 0.75vh;
     background-color: #FF0000;
     color:white;
     border:none;
-    margin:0.5vh;
+   
 }
 .logout-right{
 display: flex;

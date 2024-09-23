@@ -55,8 +55,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:2vw;
-    margin-left: 23vw;
+   margin-left: 30vw;
+   gap: 2vw;
     
 }
 
@@ -139,7 +139,7 @@
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
-    padding: 1vh;
+    padding: 2vh;
   }
   
   .menu-list-admin {
@@ -156,10 +156,10 @@
     background: linear-gradient(45deg, #006489, #00AEEF);
     color: white;
     width: 100%;
-    height: 5vh;
+   
     border: none;
     text-align: left; /* Align text to left */
-    padding-left: 0.8vw;
+   padding: 1.5vh;
     display: flex;
     align-items: center;
   }

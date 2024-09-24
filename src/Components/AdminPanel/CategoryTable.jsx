@@ -12,7 +12,7 @@ import { FaEdit } from 'react-icons/fa';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import './Admin.css';
 import CourseCategory from './CourseCategory';
-
+import Pagination from '@mui/material/Pagination';
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: '#00AEEF',
@@ -80,5 +80,8 @@ export default function CategoryTable() {
         </TableBody>
       </Table>
     </TableContainer>
+    <div className='pagination'>
+      <Pagination count={10} color="primary" />
+      </div>
     </> );
 }

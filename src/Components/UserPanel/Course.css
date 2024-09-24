@@ -15,7 +15,7 @@
   height:1450px;
     border:1 px solid rgba(0, 174, 239, 1);
     margin: 0px;
-    margin-left: 12vw;
+    margin-left: 5vw;
     border-radius:10px;
     border-top-right-radius: 10px;
   }
@@ -230,7 +230,7 @@ padding: 10px;
  
 }
   .sidebar-card {
-    flex: 1 1 calc(30% - 20px);
+    flex: 1 1 calc(25% - 10px);
     box-sizing: border-box;
     max-width: calc(30% - 20px); 
     width: 320px;

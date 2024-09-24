@@ -309,3 +309,24 @@
     box-shadow: 5px 5px 10px #d3d3d3;
    margin-left: 10vw;
   }
+  .certificate-tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tab-item {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease;
+  }
+  
+  .active-tab {
+    border-bottom: 3px solid blue; /* Blue line under active tab */
+  }
+  .pagination{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }

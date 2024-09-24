@@ -8,7 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Checkbox from '@mui/material/Checkbox';
-
+import Pagination from '@mui/material/Pagination';
 import './Admin.css';
 import CourseCategory from './CourseCategory';
 
@@ -91,5 +91,8 @@ export default function Trainer() {
         </TableBody>
       </Table>
     </TableContainer>
+    <div className='pagination'>
+      <Pagination count={10} color="primary" />
+      </div>
  </> );
 }

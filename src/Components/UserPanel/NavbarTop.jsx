@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../../Assets/logo.png';
 import { IoSearch } from "react-icons/io5";
 import { Link, useNavigate } from 'react-router-dom';
@@ -21,9 +21,13 @@ const NavbarTop = () => {
     setSearchVisible(!searchVisible);
   };
 
+  // Handle search visibility based on screen size
+  
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
+   
         <img src={logo} alt='logo' onClick={handleClick} style={{ cursor: 'pointer' }} />
         
         {searchVisible ? (

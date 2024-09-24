@@ -36,6 +36,7 @@ const AddCourseCategory = () => {
 </div>
  
   </LocalizationProvider>
+  
   </>
   )
 }

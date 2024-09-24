@@ -5,6 +5,9 @@ import AdminDashboard from './AdminDashboard'; // Default or dashboard component
 import CategoryTable from './CategoryTable';
 import TrendingCourseTable from './TrendingCourseTable';
 import Trainer from './Trainer';
+import Certificate from './Certificate';
+import Enroll from './Enroll';
+import Registration from './Registration';
 
 
 const AdminDashboardView = () => {
@@ -27,6 +30,12 @@ const AdminDashboardView = () => {
         return <TrendingCourseTable/>
         case 'Trainer':
           return <Trainer/>
+          case 'Certificate':
+            return <Certificate/>
+            case 'All Enroll':
+              return <Enroll/>
+              case 'Registration':
+                return <Registration/>
       // Add more cases here as you add more components
       default:
         return <AdminDashboard />;

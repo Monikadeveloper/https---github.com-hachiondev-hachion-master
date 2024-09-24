@@ -35,34 +35,35 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(S_No, course_name, status,created_date, Action) {
-  return { S_No, course_name,status,created_date, Action };
+function createData(S_No, student_name,email,mobile,course_name,date) {
+  return { S_No, student_name,email,mobile,course_name,date };
 }
 
 const rows = [
-  createData(1, 'QA Automation','Enable', '2019-11-25', <><FaEdit className='edit' /> <RiDeleteBin6Line className='delete' /></>),
-  createData(2, 'Python','Enable', '2022-12-11', <><FaEdit className='edit' /> <RiDeleteBin6Line className='delete' /></>),
-  createData(3, 'Tableau','Enable', '2021-02-15', <><FaEdit className='edit' /> <RiDeleteBin6Line  className='delete'/></>),
-  createData(4, 'Big data Hadoop','Enable', '2020-05-12', <><FaEdit className='edit'/> <RiDeleteBin6Line className='delete' /></>),
-  createData(5, 'Salesforce Developer','Enable', '2019-06-11', <><FaEdit className='edit'/> <RiDeleteBin6Line className='delete'/></>),
-  createData(6, 'Data Science with Python','Enable', '2018-05-21', <><FaEdit className='edit' /> <RiDeleteBin6Line className='delete' /></>),
-  createData(7, 'Blue Prism','Enable', '2019-05-18', <><FaEdit className='edit'/> <RiDeleteBin6Line className='delete' /></>),
-  createData(8, 'Load Runner', 'Enable','2018-04-13', <><FaEdit className='edit'/> <RiDeleteBin6Line className='delete' /></>),
-  createData(9, 'ServiceNow','Enable', '2019-06-11', <><FaEdit className='edit'/> <RiDeleteBin6Line className='delete'/></>),
-  createData(10, 'Cloud Computing','Enable', '2019-06-11', <><FaEdit className='edit'/> <RiDeleteBin6Line className='delete' /></>),
+  createData(1,'Priti visara','Pritivisa@gmail.com','2019181555', 'QA Automation', '2019-11-25'),
+  createData(2,'Mita Shah','raknmit2000@gmail.com','6157055334', 'Python', '2022-12-11'),
+  createData(3,'Manhar','Mahartejraj@gmail.com' ,'8133003767','Tableau', '2021-02-15'),
+  createData(4,'Simranjeet Kaur','Simrannagpal@gmail.com', '6786900208','Big data Hadoop', '2020-05-12'),
+  createData(5, 'abc','abc@gmail.com','6786900208','Salesforce Developer', '2019-06-11'),
+  createData(6,'Attrayee bhatacharjee','bhatacharjee.attreya@gmail.com' ,'6786900208','Data Science with Python', '2018-05-21'),
+  createData(7, 'Swati Kulkarni','Swatikulkarni07@gmail.com','6786900208','Blue Prism', '2019-05-18'),
+  createData(8,'Anish Patel','Anishpatel_03@gmail.com' ,'6786900208','Load Runner','2018-04-13'),
+  createData(9, 'Gaurav Bhalerao','bhalerao_01@yahoo.com','6786900208','ServiceNow', '2019-06-11'),
+  createData(10,'Laxmi Dontula','Laxmidon@gmail.com', '6786900208','Cloud Computing', '2019-06-11'),
 ];
 
-export default function TrendingCourseTable() {
+export default function Enroll() {
   return (
     <>   
     <CourseCategory
-  pageTitle="Trending Courses"
-  headerTitle="View Trending Courses"
-  buttonLabel="Add Trending Courses"
+  pageTitle="All Enroll"
+  headerTitle="View Enrollment"
+  buttonLabel="Add Enroll"
   onAdd={() => {
     // Navigate or perform another action
-    console.log('Navigating to Add Product Category Page');
+    console.log('Navigating to Add Trainer Category Page');
   }}
+
 ></CourseCategory> <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
@@ -71,10 +72,11 @@ export default function TrendingCourseTable() {
               <Checkbox />
             </StyledTableCell>
             <StyledTableCell>S.No.</StyledTableCell>
+            <StyledTableCell align="center">Student Name</StyledTableCell>
+            <StyledTableCell align="center">Email</StyledTableCell>
+            <StyledTableCell align="center">Mobile</StyledTableCell>
             <StyledTableCell align="center">Course Name</StyledTableCell>
-            <StyledTableCell align="center">Status</StyledTableCell>
-            <StyledTableCell align="center">Date</StyledTableCell>
-            <StyledTableCell align="center">Action</StyledTableCell>
+            <StyledTableCell align="center">Enrollment Date</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -82,10 +84,11 @@ export default function TrendingCourseTable() {
             <StyledTableRow key={row.S_No}>
               <StyledTableCell><Checkbox /></StyledTableCell>
               <StyledTableCell>{row.S_No}</StyledTableCell>
+              <StyledTableCell align="left">{row.student_name}</StyledTableCell>
+              <StyledTableCell align="left">{row.email}</StyledTableCell>
+              <StyledTableCell align="center">{row.mobile}</StyledTableCell>
               <StyledTableCell align="left">{row.course_name}</StyledTableCell>
-              <StyledTableCell align="center">{row.status}</StyledTableCell>
-              <StyledTableCell align="center">{row.created_date}</StyledTableCell>
-              <StyledTableCell align="center">{row.Action}</StyledTableCell>
+              <StyledTableCell align="center">{row.date}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

@@ -37,6 +37,7 @@ const Topbar = () => {
         {/* Conditional Rendering Based on Login Status */}
         {isLoggedIn ? (
           <>
+          <div className='topbar-right'>
           <div className='logout-right'>          <button className='logout-btn'><IoLogOut style={{fontSize:'2rem',gap:'0.5vh'}}/>Logout</button>
           <div className='user-info'>
             <div className="btn-group">
@@ -59,8 +60,10 @@ const Topbar = () => {
             </div>
           </div>
           </div>
+          </div>
 
           </> ) : (
+            <div className='topbar-right'>
           <div className='login-div'>
             <Link to='/login' className='login-link-home'>
               <button className='login-div-content'>Login</button>
@@ -69,6 +72,7 @@ const Topbar = () => {
             <Link to='/register' className='login-link-home'>
               <button className='login-div-content'>Register</button>
             </Link>
+          </div>
           </div>
         )}
       </div>

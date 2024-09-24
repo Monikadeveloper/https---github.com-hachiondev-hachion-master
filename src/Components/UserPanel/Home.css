@@ -138,6 +138,9 @@
         height:20vh ;
         font-size: 0.6rem;
     }
+    .topbar-right{
+        display: none;
+    }
 }
 .modal-footer{
     display: flex;
@@ -256,7 +259,7 @@
        font-size: 0.5rem;
     }
 
-    .query-content, .training-email {
+    .query-content, .training-email,.whatsapp-number {
         font-size: 0.5rem; 
         text-align: center; 
     }
@@ -279,17 +282,17 @@
   
   /* Navbar items */
   .navbar {
-    height: 12vh;
+   height: 12vh;
     background-color: #EEEEEE !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+
   }
   
   .search-div-home {
     height: 6vh;
-    width: 35vw; /* Adjust width as needed */
+    width: 30vw;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #BABABA;
     display: flex;
@@ -360,7 +363,7 @@
   
   
     .search-div-home {
-        width: 10vw; /* Adjust for mobile */
+        width: 8vw; 
         margin-left: 0.5vw;
       }
     
@@ -377,7 +380,32 @@
         margin: 0;
       }
     }
+    @media screen and (max-width: 480px) {
   
+  
+        .search-div-home {
+            width: 10vw; /* Adjust for mobile */
+            margin-left: 0.5vw;
+          }
+          .navbar-left{
+            width: 80%;
+          }
+        .navbar img{
+            width: 30vw;
+        }
+          .navbar-nav {
+          display: none;
+          }
+          .btn-search-home{
+            height: 6vh;
+            width: 10vw;
+            margin-left: 6vw;
+          }
+          .nav-item-link {
+          display: none;
+          }
+        }
+      
  
  
   @media screen and (max-width: 1024px) {
@@ -1286,6 +1314,8 @@ width: auto;}
         cursor: pointer;
        margin-left: 2vh;
       padding: 2.5vh;
+      text-decoration: none;
+      padding-bottom: 2vh;
     
     }
     

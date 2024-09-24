@@ -64,7 +64,7 @@ const Footer = () => {
     <p className='footer-content'>Sitemap</p>
     </div>
       </div>
-      <hr width='95%' size='2' color='white' style={{marginLeft:'2vh'}}/>
+      <hr  size='2' />
       <div className='footer-bottom'>
       <p className='footer-copyright'>© Hachion 2024. All Rights Reserved.</p>
       <div className='footer-link'>

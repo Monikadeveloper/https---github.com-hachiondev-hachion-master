@@ -726,6 +726,7 @@ input[type="radio"] {
   
   .know-more {
   padding: 1vh;
+  height: 7vh;
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 2px 2px 2px black;
@@ -1031,7 +1032,7 @@ input[type="radio"] {
 .contact-info {
   display: flex;
   align-items: center;
-  gap:15px;
+  gap:1.5vw;
 }
 
 .contact-item {

@@ -26,6 +26,8 @@ import Aboutus from './Components/UserPanel/Aboutus';
 import ContactUs from './Components/UserPanel/ContactUs';
 import UserDashboard from './Components/UserPanel/UserDashboard';
 import AdminDashboardView from './Components/AdminPanel/AdminDashboardView';
+import AddCourseCategory from './Components/AdminPanel/AddCourseCategory';
+import CategoryTable from './Components/AdminPanel/CategoryTable';
 
 function App() {
   return (
@@ -47,7 +49,7 @@ function App() {
       <Route path='/adminnav' element={<AdminNavbar/>}/>
       <Route path='/adminsidebar' element={<AdminSidebar/>}/>
       <Route path='/admindashboard' element={<AdminDashboard/>}/>
-      <Route path='/admincourse' element={<CourseCategory/>}/>
+      <Route path='/admincourse' element={<CategoryTable/>}/>
       <Route path='/blogs' element={<Blogs/>}/>
       <Route path='/qatesting' element={<QaTesting/>}/>
       <Route path='/salesforce' element={<Salesforce/>}/>
@@ -57,6 +59,7 @@ function App() {
       <Route path='/contactus' element={<ContactUs/>}/>
       <Route path='/userdashboard' element={<UserDashboard/>}/>
       <Route path='/admindashboardview' element={<AdminDashboardView/>}/>
+      <Route path='/addcourse' element={<AddCourseCategory/>}/>
       </Routes></BrowserRouter>
     </>
   );

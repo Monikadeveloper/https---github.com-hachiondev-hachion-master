@@ -23,8 +23,8 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%; 
-    max-width: 50vw; 
-    padding-left: 1vw;
+    max-width: 40vw; 
+    
 }
 
 .query-content{
@@ -185,10 +185,7 @@
     margin-right: 1vh }
 @media screen and (max-width: 1024px) {
     
-    .topbar-left {
-        width: 60%;
-        padding-left: 1vw;
-    }
+ 
 .training-mail-icon{
     font-size: 1.5rem;
 }
@@ -278,46 +275,7 @@
         display: none;
     }
 }
-/* General styling */
-.navbar {
-    height: 12vh;
-    background-color: #EEEEEE !important;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    
-    padding: 0 20px;
-  }
- 
-  .search-div-home {
-    height: 6vh;
-    width: 35vw;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px #BABABA;
-    display: flex;
-    background-color: white;
-    margin: 0 auto;
-    margin-left:15vw;
-  }
-  
-  .search-input-home {
-    flex: 1;
-    padding-left: 1vw;
-    border-radius: 10px 0px 0px 10px;
-    border: 1px solid rgba(186, 186, 186, 1);
-    outline: none;
-    background-color: white;
-  }
-  
-  .btn-search-home {
-    width: 5vw;
-    height: 6vh;
-    background-color: rgba(0, 174, 239, 1);
-    color: white;
-    border-radius: 0px 10px 10px 0px;
-    border: none;
-    cursor: pointer;
-  }
+
   
   /* Navbar items */
   .navbar {
@@ -394,8 +352,8 @@
     background-color: #CCEFFC;
     color: #00AEEF !important;
     border-radius: 10px;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
     font-weight: 500;
   }
   @media screen and (max-width: 768px) {
@@ -1188,6 +1146,10 @@ width: auto;}
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap; /* Allow wrapping of items */
+}
+.footer hr{
+    width: 95%;
+    margin-left: 2vw;
 }
 
 .footer-copyright {

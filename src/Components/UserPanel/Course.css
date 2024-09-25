@@ -1059,6 +1059,11 @@ input[type="radio"] {
   font-weight: bold; 
   border:2px solid white;
 }
+@media screen and (max-width: 1024px){
+  .contact-info{
+     gap: 3vw;
+  }
+}
 .mentoring-mode-content{
   font-size: 24px;
   font-weight: 400;

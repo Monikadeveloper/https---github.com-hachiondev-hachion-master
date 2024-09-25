@@ -23,16 +23,16 @@ const Topbar = () => {
       <div className='topbar'>
         <div className='topbar-left'>
           <p className='query-content'>Have any query ?</p>
-          <div className='training-mail'>
+          {/* <div className='training-mail'> */}
             <img src={whatsapp} alt='whatsapp-icon' className='whatsapp-icon' />
-            <p className='whatsapp-number'> +91 9490323388</p>
+            <p className='whatsapp-number'> +919490323388</p>
             <PiLineVerticalThin style={{ color: 'white', fontSize: '2rem' }} />
-          </div>
-          <div className='training-mail'>
+         
+          {/* <div className='training-mail'> */}
             <IoIosMail className='training-mail-icon' />
             <p className='training-email'>trainings@hachion.co</p>
           </div>
-        </div>
+       
 
         {/* Conditional Rendering Based on Login Status */}
         {isLoggedIn ? (

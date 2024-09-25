@@ -21,7 +21,7 @@ const Register = () => {
   <div className='icon-places'>
     <div className='icon-text'>
   <img src={google} alt='google' className='icon-text-img'/>
-   <div className='icon-text-holder'>Google</div>
+   <div className='icon-text-holder-google'>Google</div>
     </div>
     <div className='icon-text' >
   <img src={facebook} alt='facebook' className='icon-text-img'/>
@@ -38,7 +38,7 @@ const Register = () => {
     <Link to='/registerhere' className='register-link-to'>
    <div className='icon-text'>
   <img src={email} alt='login-with-email' className='icon-text-img'/> 
-   <div className='icon-text-holder-email'>Login with Email</div> 
+   <div className='icon-text-holder-email'>Sign-up with Email</div> 
     </div></Link>
    
   </div>

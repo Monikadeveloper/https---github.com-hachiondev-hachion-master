@@ -8,6 +8,10 @@ import Trainer from './Trainer';
 import Certificate from './Certificate';
 import Enroll from './Enroll';
 import Registration from './Registration';
+import ScheduleRequest from './ScheduleRequest';
+import Blogs from './Blogs';
+import Support from './Support';
+import Course from './Course';
 
 
 const AdminDashboardView = () => {
@@ -36,6 +40,14 @@ const AdminDashboardView = () => {
               return <Enroll/>
               case 'Registration':
                 return <Registration/>
+                case 'Schedule Request':
+                  return <ScheduleRequest/>
+                  case 'Blog':
+                    return <Blogs/>
+                   case 'Support':
+                    return <Support/>
+                    case 'Course':
+                      return <Course/>
       // Add more cases here as you add more components
       default:
         return <AdminDashboard />;

@@ -128,7 +128,7 @@
   left: 0;
   min-width: 22vw;
   right: 5px;
-  overflow: hidden; /* Removed scrollbar */
+  overflow-y: auto; /* Enable vertical scrolling */
   height: 100vh;
   margin: 0;
 }
@@ -145,13 +145,13 @@
 .menu-list-admin {
   list-style-type: none; /* Removed bullet points */
   padding: 0;
+  margin: 0;
 }
 
 .menu-item-container {
   display: flex;
   align-items: center;
   background: linear-gradient(90deg, #006489 0%, #00AEEF 100%);
-
 }
 
 .menu-item-admin {
@@ -184,7 +184,6 @@
   border: 1px solid white;
 }
 
- 
   .admin-dashboard-content{
     display:flex;
     flex-wrap: wrap;
@@ -329,4 +328,31 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+  }
+  .download-btn{
+    background-color: #00AEEF;
+    border-radius: 30px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 4px #d3d3d3;
+    color: white;
+    padding: 1vh;
+  }
+  .upload-btn{
+    background-color: #00AEEF;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow:5px 5px 5px #d3d3d3;
+    color: white;
+    padding: 2vh 3vw;
+  }
+  .lead-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lead-form p{
+    padding-left: 2vw;
+  }
+  .lead-form button{
+    margin-left: 9vw;
   }

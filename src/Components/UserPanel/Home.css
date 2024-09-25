@@ -95,20 +95,21 @@
 
 }
 @media screen and (max-width: 1024px){
-    .button-login{
-        margin-left: 25vw;
-        width:8vw;
-        height:4vh;
-        font-size: 0.8rem;
-    }
- 
-    .query-content{
-        margin-right: 1vw;
-    }
-    .topbar-left{
-        align-items: center;
-        max-width: 70vw;
-    }
+ .query-content{
+    font-size: 1rem;
+ }
+ .topbar{
+    display: flex;
+    flex-direction: row;
+ }
+ .topbar-left{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+ }
+ .topbar-right{
+    width: 30vw;
+ }
 }
 @media screen and (max-width: 768px){
     .button-login{
@@ -902,10 +903,10 @@ color: white !important;
         width: calc(33.33% - 10px); 
     }
     .training-card-holder{
-        max-width: 90%;
+       max-width: 90%;
     }
     .view-btn{
-        margin-right: 12vh;
+        margin-right: 9vh;
        font-size: 0.8rem;
 
     }

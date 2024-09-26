@@ -137,25 +137,7 @@
     color: #00AEEF;
     margin-bottom: 1vh; 
 }
-/* Corporate.css */
 
-/* Desktop and Laptop (2 cards per row) */
-@media (min-width: 1024px) {
-    .learner-card-item {
-      display: flex;
-      justify-content: space-around;
-    }
-  }
-  
-  /* Tablet and Mobile (1 card per row) */
-  @media (max-width: 1024px) {
-    .learner-card-item {
-      display: flex;
-      justify-content: center;
-    
-    }
-  }
-  
 .view-details-corporate {
    
     width: 9vw;
@@ -423,7 +405,7 @@
      cursor: pointer;
      z-index: 1;
      border-radius: 50%;
-     margin-left: 12vh;
+     margin-left: 1vh;
    }
    .custom-next-icon {
        font-size: 2.25rem;
@@ -459,6 +441,136 @@
        height: 3vh; 
        border-radius: 10px; 
    }
+   .learner-card-item {
+    display: flex;
+    justify-content: center;
+  }
+  .left-quotes{
+    height: 113.97px;
+     z-index: 1;
+      width: 148.59px;
+       color: rgba(0, 174, 239, 1);
+        margin-bottom: -8vh; 
+  }
+  .right-quotes{
+    height: 113.97px;
+     z-index: 1;
+      width: 148.59px;
+       color: rgba(0, 174, 239, 1);
+        margin-top: -8vh; 
+        margin-left: 90vw;
+  }
+  @media (min-width: 1181px) {
+    .learner-card-item {
+      justify-content: space-evenly; /* To have space between the two cards */
+    }
+    .learner-card{
+        width: 36vw;
+    }
+ 
+  }
+  /* Desktop and Laptop Styles */
+  @media (max-width: 1180px) {
+    .learner-card-item {
+      justify-content: center; /* To have space between the two cards */
+    }
+    .learner-card{
+        width: 85vw;
+    }
+    .custom-prev-icon{
+        margin-left: -12vh;
+    }
+    .left-quotes{
+        margin-top: -5vh;
+    }
+    .right-quotes{
+        margin-left: 85vw;
+        margin-top: -4vh;
+    }
+    .learner-name img{
+        height: 40px;
+        width: 40px;
+        margin-top: 1.8vh;
+    }
+  }
+  
+  /* Tablet and Mobile Styles */
+  @media (max-width: 1024px) {
+    .learner-card-item {
+      display: flex;
+      justify-content: center; 
+    }
+  
+    .learner-card {
+      width: 85vw; 
+    }
+    .left-quotes{
+        margin-left: 4vh;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .learner-card {
+      width: 85vw; 
+    }
+    .custom-prev-icon{
+        margin-left: -10vh;
+    }
+    .learner-image{
+        height: 90px;
+        width: 100px;
+    }
+    .profile-image{
+        height: 88px !important;
+        width: 98px !important;
+    }
+    .learner-name img{
+        height: 30px;
+        width: 30px;
+        margin-top: 2vh;
+    }
+    .left-quotes{
+        height: 50px;
+        width: 50px;
+        margin-left: 6vh;
+    }
+    .right-quotes{
+        height: 50px;
+        width: 50px;
+        margin-left: 87vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .learner-card {
+      width: 90vw; 
+    }
+    .name{
+        font-size: 1rem;
+        margin-top: 4vh;
+       
+    }
+    .learner-name img{
+        margin-top: 5vh !important;
+    }
+    .learner-info{
+        margin-left: 3vh;
+    }
+    .job-profile{
+        font-size: 1rem;
+    }
+    .job-location{
+        font-size: 1rem;
+    }
+    .learner-description{
+        font-size: 1rem;
+    }
+    .left-quotes{
+        margin-left: 2vh;
+    }
+    
+  }
+  
    
   
    .carousel-indicators li,
@@ -472,69 +584,6 @@
     box-shadow: 5px 5px 5px #d3d3d3;
    }
 
-   @media screen and (max-width:1024px) {
-    .learner-card{
-        width: 60vw;
-    }
-    .name{
-        padding-top: 2vh;
-        font-size: 1.25rem;
-    }
-    .learner-image{
-        height: 10vh;
-        width: 5vw;
-    }
-    .learner-image img{
-        height: 10vh;
-        width: 5vw;
-    }
-    
-   }
-   @media screen and (max-width:768px) {
-    .learner-card{
-        width: 60vw;
-    }
-    .learner-image{
-        height: 8vh;
-        width: 4vw;
-    }
-    .learner-image img{
-        height: 8vh;
-        width: 4vw;
-    }
-    .name{
-        padding-top: 2vh;
-        font-size: 1rem;
-    }
-    .carousel .carousel-item{
-        display: flex;
-        justify-content: center;
-    }
-   
-   }
-   @media screen and (max-width:480px) {
-    .learner-card{
-        width: 40vw;
-        font-size: 0.8rem;
-    }
-    .learner-image{
-        height: 8vh;
-        width: 4vw;
-    }
-    .learner-image img{
-        height: 8vh;
-        width: 4vw;
-    }
-    .name{
-        padding-top: 1vh;
-        font-size: 0.8rem;
-    }
-    .carousel .carousel-item{
-        display: flex;
-        justify-content: center;
-    }
-   
-   }
    .blog-banner-content{
   
     color: white;

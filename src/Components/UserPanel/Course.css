@@ -725,16 +725,16 @@ input[type="radio"] {
   }
   
   .know-more {
-  padding: 1vh;
-  height: 7vh;
+  padding: 0.2vh;
+
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 2px 2px 2px black;
     color: black;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     border: none;
-    margin-top: 20px; 
+    margin:2vh;
   }
   .know-more:hover{
     background-color: #000;
@@ -749,26 +749,40 @@ input[type="radio"] {
   }
   @media screen and (max-width: 480px){
     .corporate-para{
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
     .corporate-para-span{
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   }
   @media screen and (max-width: 768px){
     .corporate-para{
-      font-size: 1.25rem;
+      font-size: 20px;
     }
     .corporate-para-span{
-      font-size: 1.25rem;
+      font-size: rem;
+    }
+    .quote-left,.quote-right{
+      font-size: 10px;
+    
+    }
+    .corporate-content{
+      padding: 5px;
     }
   }
   @media screen and (max-width: 1024px){
     .corporate-para{
-      font-size: 1.5rem;
+      font-size: 20px;
     }
     .corporate-para-span{
-      font-size: 1.5rem;
+      font-size: 20px;
+    }
+    .quote-left,.quote-right{
+      font-size: 20px;
+    
+    }
+    .corporate-content{
+      padding: 1vh;
     }
   }
   

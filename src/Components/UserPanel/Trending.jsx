@@ -16,6 +16,11 @@ const Trending = () => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [dropdownSelection, setDropdownSelection] = useState('Project Management');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const handleCardClick = (path) => {
     navigate(path);
@@ -98,7 +103,7 @@ const Trending = () => {
           <h1 className='association-head'>Trending Courses</h1>
         </div>
         <div className='view-btn'>
-          <button className='view-all'>View All</button>
+          <button className='view-all' onClick={()=>navigate('/course')}>View All</button>
         </div>
         <div className='courses-list'>
           {categories.map(category => (
@@ -112,7 +117,7 @@ const Trending = () => {
             </h2>
           ))}
           <div className='dropdown-container'>
-            <RiMenuUnfold3Line 
+            <RiMenuUnfold3Line className='menu-icon'
               style={{ fontSize: '1.5rem', cursor: 'pointer',marginTop:'1.3vh' }} 
               onClick={handleDropdownClick} 
             />
